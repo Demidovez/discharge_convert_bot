@@ -6,7 +6,7 @@ var iconv = require("iconv-lite");
 const { Markup } = require("telegraf");
 
 async function convert_xml_txt(state, ctx) {
-  const { file_id, user } = state;
+  const { file_id, file_name, user } = state;
 
   const fileUrl = await ctx.telegram.getFileLink(file_id);
   const response = await axios.get(fileUrl.href);
@@ -22,7 +22,7 @@ async function convert_xml_txt(state, ctx) {
     });
 
     const fileName = "Выписка_utf.txt";
-    const fileConvertName = "Выписка.txt";
+    const fileConvertName = file_name.replace(".xml", "") + ".txt";
     var now = new Date();
     var period = moment(now).format("DD.MM.YYYY");
     var time = moment(now).format("HH:mm:ss");

@@ -162,7 +162,10 @@ ${ctx.wizard.state.user.unp}
 }
 
 bot.on("document", (ctx) => {
-  ctx.scene.enter("convert-wizard", { file_id: ctx.message.document.file_id });
+  ctx.scene.enter("convert-wizard", {
+    file_id: ctx.message.document.file_id,
+    file_name: ctx.message.document.file_name,
+  });
 });
 
 bot.command("invoice", (ctx) => {
