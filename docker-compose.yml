@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  discharge_convert_bot:
+    build: .
+    restart: unless-stopped
+    image: buhgalter_payment
+    container_name: discharge_convert_bot_co

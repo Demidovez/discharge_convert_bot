@@ -173,3 +173,5 @@ bot.command("invoice", (ctx) => {
 });
 
 bot.launch();
+
+console.log("Start bot " + new Date());
