@@ -3,5 +3,5 @@ services:
   discharge_convert_bot:
     build: .
     restart: unless-stopped
-    image: buhgalter_payment
+    image: discharge_convert_bot
     container_name: discharge_convert_bot_co
