@@ -5,3 +5,8 @@ services:
     restart: unless-stopped
     image: discharge_convert_bot
     container_name: discharge_convert_bot_co
+
+networks: 
+  default: 
+    external: true
+    name: autohunt_network       
