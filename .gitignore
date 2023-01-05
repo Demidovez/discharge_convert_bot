@@ -57,3 +57,10 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+user1.txt
+user2.txt
+.env*
+users.txt
+*.png
+html/index_*
+sessions_db*

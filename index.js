@@ -6,9 +6,7 @@ const {
   Scenes: { WizardScene, Stage },
 } = require("telegraf");
 const convert_xml_txt = require("./convert");
-const bot = new Telegraf("2034852361:AAGD2mHjXGT6jDbORPTDOlRUsFV6Rp0O9CE");
-//2034852361:AAGD2mHjXGT6jDbORPTDOlRUsFV6Rp0O9CE
-//5262396157:AAErSP0tb3P8npBGaO39fPxD7uP9Bk8Oj9Q
+const bot = new Telegraf(process.env.TOKEN);
 
 const users = [321438949, 310597397];
 
